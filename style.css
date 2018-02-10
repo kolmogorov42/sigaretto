@@ -1,0 +1,650 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+
+}
+
+body#home {
+    background: #e7d4ff;
+    margin: 0px;
+}
+
+body#home.baccellone {
+    background: #CCFFCC;
+    margin: 0px;
+}
+
+body#gen {
+    background: #fff;
+    margin: 0px;
+}
+
+#buttonBar::selection,
+.button::selection,
+.button span::selection,
+h1.title::selection,
+#content::selection,
+.dog::selection {
+    background: transparent;
+}
+
+.hidden {
+
+    display: none !important;
+}
+
+#menubar {
+    width: 620px;
+    height: 30px;
+    background-color: #000;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#menubar .option {
+    color: #fff;
+    margin-right: 30px;
+}
+
+#menubar .option:last-child {
+    margin-right: 0px;
+}
+
+#home #menubar .option:hover {
+    border-bottom: 5px solid #fff;
+    padding-bottom: 5px;
+}
+
+#gen #menubar .option:hover {
+    border-bottom: 5px solid #e7d4ff;
+    padding-bottom: 5px;
+}
+
+#menubar .option a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#home #menubar .option.arch a,
+#gen #menubar .option.gen a {
+    color: #e7d4ff;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1.title {
+    color: #000;
+    font-family: 'Krona One', sans-serif;
+    font-size: 90px;
+    margin: 0px;
+    cursor: default;
+    padding-top: 25px;
+}
+
+#home h1.title {
+    text-shadow: 0px -5px #fff;
+}
+
+#gen h1.title {
+    text-shadow: 0px -5px #e7d4ff;
+}
+
+#subtitle {
+    position: relative;
+    padding: 2px 15px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 22px;
+    cursor: default;
+    color: #e7d4ff;
+    text-shadow: 0px -2px #000;
+}
+
+#subtitle .spaced {
+    letter-spacing: 40px;
+}
+
+#wrapper {
+    width: 620px;
+    margin: 0 auto;
+}
+
+#buttonBar {
+    margin: 0px auto;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+
+#gen #buttonBar {
+    margin-top: 25px;
+}
+
+.button {
+    width: 143px;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Slabo 27px', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    z-index: 300;
+}
+
+#home .button {
+    float: left;
+    margin-left: 25px;
+    background-color: #fff;
+}
+
+#gen .button {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #e7d4ff;
+}
+
+#home .button:first-child {
+    margin-left: 0;
+}
+
+#home #buttonBar .button:hover,
+#home .button.jqhover,
+#gen #buttonBar .button:hover,
+#gen .button.jqhover {
+    color: #fff;
+    background-color: #000;
+}
+
+.button.ext {
+    width: 85px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    z-index: 100;
+}
+
+.button.ext:hover {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+#home .button.arrow,
+#home .button.arrow.fake:hover {
+    width: 45px;
+    background-image: url('img/arrows.png');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#home #buttonBar .button.arrow.dead,
+#home #buttonBar .button.arrow.dead.jqhover {
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid #fff;
+}
+
+#buttonBar .button.arrow.dead:hover {
+    cursor: default;
+}
+
+#home #buttonBar .button.arrow.jqhover {
+    background-color: #000;
+}
+
+.button.right {
+    background-position: -45px 0px;
+}
+
+.button.left:hover,
+.button.left.jqhover {
+    background-position: 0px -45px;
+}
+
+.button.right:hover,
+.button.right.jqhover {
+    background-position: -45px -45px;
+}
+
+#searchBar {
+    display: block;
+    height: 45px;
+    margin: 25px auto;
+    width: 100%;
+}
+
+#searchBar input#searchField {
+    width: 100%;
+    height: 45px;
+    float: left;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    font-family: 'Slabo 27px', sans-serif;
+    font-size: 20px;
+}
+
+#searchBar input:focus {
+    outline-width: 0;
+}
+
+#searchBar #searchButton {
+    border: 0px;
+    float: right;
+    width: 17%;
+}
+
+#resultsBar {
+    font-family: 'Slabo 27px', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cardBox {
+
+position: relative;
+
+}
+
+.card {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    padding: 37px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-family: 'Slabo 27px', sans-serif;
+    font-size: 30px;
+    word-wrap: break-word;
+    z-index: 200;
+
+}
+
+#home .card {
+    background-color: #fff;
+}
+
+#gen .card {
+    background-color: #e7d4ff;
+}
+
+
+
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fb-share-button {
+    position: absolute !important;
+    bottom: 15px;
+    left: 15px;
+}
+
+.authorBadge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 0px;
+    width: 0px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+}
+
+.authorBadge.badge1 {
+    border-color: #f9d53d;
+}
+
+.authorBadge.badge2 {
+    border-color: #29abe2;
+}
+
+.authorBadge.badge3 {
+    border-color: #ed1c24;
+}
+
+.authorBadge.badge4 {
+    border-left-color: #f9d53d;
+    border-top-color: #f9d53d;
+    border-right-color: #29abe2;
+    border-bottom-color: #29abe2;
+}
+
+.authorBadge.badge5 {
+    border-left-color: #f9d53d;
+    border-top-color: #f9d53d;
+    border-right-color: #ed1c24;
+    border-bottom-color: #ed1c24;
+}
+
+.authorBadge.badge6 {
+    border-left-color: #29abe2;
+    border-top-color: #29abe2;
+    border-right-color: #ed1c24;
+    border-bottom-color: #ed1c24;
+}
+
+.authorBadge.badge7 {
+    border-left-color: #f9d53d;
+    border-top-color: #29abe2;
+    border-right-color: #ed1c24;
+    border-bottom-color: #000000;
+}
+
+.cardMedia {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.cardMedia img {
+    width: 100%;
+}
+
+.cardSound.play {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    background-image: url('img/sound.png');
+}
+
+.cardSound.stop {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    background-color: #f00;
+}
+
+.cardSound:hover {
+    -webkit-filter: brightness(0);
+}
+
+.card.notFound {
+    color: #f00;
+}
+
+.card:last-child {
+    margin-bottom: 50px;
+}
+
+.infoBox {
+
+    position: absolute;
+    height: 20px;
+    bottom: 15px;
+    right: 15px;
+
+}
+
+.copy {
+
+    display: inline;
+    float:right;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-right: 10px;
+
+}
+
+#gen .copy {
+
+    color: #fff !important;
+
+}
+
+#home .copy {
+
+    color: #ddd;
+
+}
+
+.highlight {
+
+    color: #e7d4ff !important;
+
+
+}
+
+
+.copy span {
+
+    cursor: pointer;
+
+}
+
+.copyText.zeroclipboard-is-hover,
+.copyUrl.zeroclipboard-is-hover {
+
+    color: #000;
+
+}
+
+.cardId {
+
+    float:right;
+    font-size: 15px;
+}
+
+.cardId a {
+    color: #ddd;
+}
+
+.cardId a:hover {
+    color: #000;
+}
+
+
+.dog {
+    background-image: url('img/dog.png');
+    width: 342px;
+    height: 351px;
+    position: fixed;
+    bottom: -8px;
+    opacity: 1;
+    z-index: 100;
+}
+
+.dog.left {
+    left: -12px;
+}
+
+.dog.right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    right: -12px;
+}
+
+.dog .dognose {
+    display: block;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 70px;
+    right: 60px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    padding: 0px;
+    font-family: 'Slabo 27px', sans-serif;
+    z-index: 300;
+}
+
+.footer .copyright {
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+}
+
+#home #hotkeysButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 19px;
+    height: 11px;
+    background-image: url('img/keyboardbutton.png');
+    cursor: pointer;
+}
+
+#hotkeysOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#darkOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: 700;
+}
+
+#keyboard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/keyboard.png');
+    background-repeat: no-repeat;
+    background-position: 50% 350px;
+    background-size: 170px;
+    z-index: 800;
+}
+
+#home #fakeButtonBar {
+    position: relative;
+    margin: 0 auto;
+    top: 262px;
+    width: 283px;
+    height: 45px;
+    text-align: center;
+    opacity: 1;
+    z-index: 800;
+}
+
+#home #fakePreviousButton {
+    margin-left: 0;
+}
+
+#home .button.left.fake:hover {
+    background-position: 0px 0px;
+}
+
+#home .button.right.fake:hover {
+    background-position: -45px 0px;
+}
+
+#home .fake:hover {
+    cursor: default;
+}
+
+@media screen and (max-device-width: 500px),
+screen and (max-width: 700px) {
+
+
+
+    #wrapper {
+        width: 80%
+
+    }
+    #searchBar {
+        text-align: center;
+    }
+    #searchBar input#searchField {
+        width: 100%
+    }
+    #firstButton,
+    #latestButton {
+        display: none;
+    }
+    #previousButton {
+        float: left !important;
+        margin-left: 0px !important;
+    }
+    #nextButton {
+        float: right !important;
+        margin-left: 0px !important;
+    }
+    #randomButton {
+        display: inline-block !important;
+        float: none !important;
+        margin: 0px auto !important;
+    }
+    .card {
+        font-size: 6vw;
+    }
+    h1.title {
+        font-size: 11vw;
+        padding-top: 55px;
+    }
+    #subtitle {
+        font-size: 3vw;
+    }
+    #subtitle .spaced {
+        letter-spacing: 4vw;
+    }
+    .button.ext {
+        display: none;
+    }
+    .footer .names {
+        display: none;
+    }
+    #hotkeysButton,
+    #hotkeysOverlay {
+        display: none;
+    }
+    #menubar {
+        position: fixed;
+        width:100%;
+        border-radius: 0px;
+        z-index: 9000;
+    }
+    #menubar .option.fb {
+        display: none;
+    }
+    .copy {
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 500px),
+screen and (max-width: 1200px) {
+    .dog {
+        display: none;
+    }
+}
+
+

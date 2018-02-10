@@ -1,0 +1,65 @@
+body#stats {
+    background: #e7d4ff;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+body#stats #searchBar, body#stats .dog {
+
+    display: none;
+
+}
+
+#stats h1.title {
+    text-shadow: 0px -5px #fff;
+}
+
+.box {
+
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px;
+
+	margin-bottom: 20px;
+
+}
+
+
+/* BOX 01 */
+
+#box01 {
+
+	
+}
+
+/* PIE AUTORI */
+
+.box svg {
+
+	display: block;
+	margin: 0 auto;
+
+}
+
+.arc01 text {
+
+  fill: #fff;
+  //font-size: 30px;
+  font-family: 'Krona One', sans-serif;
+  text-anchor: middle;
+
+}
+
+.arc01 path {
+  stroke: #fff;
+  stroke-width: 5px;
+
+}
+
+@media screen and (max-device-width: 500px),
+screen and (max-width: 700px) {
+
+
+}
